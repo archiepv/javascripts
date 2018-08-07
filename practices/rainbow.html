@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Javascript Exercise">
+		<meta name="keyword" content="Age, HTML, CSS, Javascript, Objects">
+		
+		<title>Javascript Exercise</title>
+	</head>
+	
+	<body>
+		<h1>Walk the Dog.</h1>
+		<p>The program gave an "undefined" argument, because of the "length" property.</p>
+		
+		<script>
+			var rainbow = {
+  				name: "Rainbow",
+  				weight: 16,
+  				breed: "Beagle",
+  				likesFetching: true,
+					walkTimes: 3
+			};
+
+			function walkTheDog(dog) {
+  			console.log(dog.name + " likes to be walked at: ");
+  		for (var i = 0; i < dog.walkTimes; i++) {
+    		console.log(dog.walkTimes[i]);
+  		}
+  		if (dog.likesFetching == true) {
+    		console.log("Play fetch with " + dog.name);
+  		}
+		}
+			walkTheDog(rainbow);
+		</script>
+	</body>
+</html>
